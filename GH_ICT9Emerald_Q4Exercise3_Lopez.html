@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Centimeter to Feet Converter</title>
+</head>
+<body>
+    <input type="text" id="value1" placeholder="Enter centimeter value"><br>
+    <input type="submit" value="Convert" onclick="toFeet()">
+    <p id="id1"></p>
+    <script>
+      function toFeet() {
+      var numcm = document.getElementById('value1').value; //numerical value of textbox
+      var convert = numcm * 0.033; document.getElementById('id1').innerHTML = convert; //multiply numerical value of textbox to 0.033 to convert to feet
+    }
+    </script>
+</body>
+</html>
